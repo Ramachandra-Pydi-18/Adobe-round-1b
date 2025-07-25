@@ -21,9 +21,6 @@ persona-doc-intelligence/
 ├── approach_explanation.md # Approach and thought process
 └── README.md # This file
 
-yaml
-Copy
-Edit
 
 ---
 
@@ -80,8 +77,6 @@ python src/main.py
 📁 Output
 The extracted persona data will be saved to:
 
-lua
-
 output/
 └── <image_name>.json
 📦 Docker (Optional)
@@ -92,9 +87,7 @@ Run the Docker container:
 
 docker run -v "$(pwd)/input:/app/input" -v "$(pwd)/output:/app/output" persona-doc-intelligence
 📄 Sample Output (JSON)
-json
-Copy
-Edit
+
 {
   "Name": "Ram Chandra",
   "DOB": "01-01-2000",
@@ -126,8 +119,6 @@ Feel free to fork and contribute!
 📧 Email: ramachandrapydi18@gmail.com
 🌐 GitHub: Ramachandra-Pydi-18
 
-vbnet
-Copy
-Edit
+
 
 Let me know if you'd like to auto-generate a PDF or if you want badges (like build,
