@@ -60,26 +60,15 @@ Refer to `approach_explanation.md` for a detailed explanation.
 git clone https://github.com/Ramachandra-Pydi-18/Adobe-round-1b.git
 cd Adobe-round-1b
 2. Create and activate a virtual environment
-bash
-Copy
-Edit
 python -m venv venv
 For Windows:
 
-bash
-Copy
-Edit
 venv\Scripts\activate
 For Unix/Mac:
 
-bash
-Copy
-Edit
 source venv/bin/activate
 3. Install dependencies
-bash
-Copy
-Edit
+
 pip install -r requirements.txt
 Note: You must have Tesseract OCR installed on your system and added to PATH.
 👉 Download Tesseract OCR
@@ -87,28 +76,20 @@ Note: You must have Tesseract OCR installed on your system and added to PATH.
 ▶️ Run the Project
 Place your document images in the input/ folder and run:
 
-bash
-Copy
-Edit
 python src/main.py
 📁 Output
 The extracted persona data will be saved to:
 
 lua
-Copy
-Edit
+
 output/
 └── <image_name>.json
 📦 Docker (Optional)
 Build the Docker image:
-bash
-Copy
-Edit
+
 docker build -t persona-doc-intelligence .
 Run the Docker container:
-bash
-Copy
-Edit
+
 docker run -v "$(pwd)/input:/app/input" -v "$(pwd)/output:/app/output" persona-doc-intelligence
 📄 Sample Output (JSON)
 json
