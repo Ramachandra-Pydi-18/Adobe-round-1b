@@ -18,10 +18,6 @@ persona-doc-intelligence/
 ├── approach_explanation.md # Approach and thought process
 └── README.md # This file
 
-yaml
-Copy
-Edit
-
 ## 📌 Problem Statement
 
 Given a folder of scanned ID documents, extract key persona information such as:
@@ -50,22 +46,18 @@ Refer to `approach_explanation.md` for detailed explanation.
 ## 🛠️ Setup Instructions
 
 ### 1. Clone the repository
-```bash
+
 git clone https://github.com/Ramachandra-Pydi-18/Adobe-round-1b.git
 cd Adobe-round-1b
 2. Create and activate a virtual environment
-bash
-Copy
-Edit
+
 python -m venv venv
 # For Windows:
 venv\Scripts\activate
 # For Unix/Mac:
 source venv/bin/activate
 3. Install dependencies
-bash
-Copy
-Edit
+
 pip install -r requirements.txt
 Note: You must have Tesseract OCR installed on your system and added to PATH.
 Download Tesseract
@@ -73,30 +65,20 @@ Download Tesseract
 4. Run the project
 Place your document images in the input/ folder and run:
 
-bash
-Copy
-Edit
 python src/main.py
 5. Output
 The extracted persona data will be saved to:
 
-lua
-Copy
-Edit
 output/
 ├── <image_name>.json
 📦 Docker (Optional)
 Build and run the Docker container:
 
-bash
-Copy
-Edit
+
 docker build -t persona-doc-intelligence .
 docker run -v "$(pwd)/input:/app/input" -v "$(pwd)/output:/app/output" persona-doc-intelligence
 📄 Sample Output
-json
-Copy
-Edit
+
 {
   "Name": "Ram Chandra",
   "DOB": "01-01-2000",
