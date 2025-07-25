@@ -78,6 +78,7 @@ Build and run the Docker container:
 docker build -t persona-doc-intelligence .
 docker run -v "$(pwd)/input:/app/input" -v "$(pwd)/output:/app/output" persona-doc-intelligence
 📄 Sample Output
+json
 
 {
   "Name": "Ram Chandra",
